@@ -15,7 +15,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 ScriptName = "Sync-Drop Countdown Script"
 Website = "https://www.dimensionv.de, https://www.twitch.tv/surn"
 Description = "Initiates a countdown on chat for sync-dropping, using the !syncdrop command"
-Creator = "Karubian, Surn"
+Creator = "Karubian"
+Contributor = "Surn"
 Version = "1.4"
 """
 1.4 integrated with Castor Lazy Pack to allow the addition of a video upon sync drop

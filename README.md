@@ -1,8 +1,8 @@
 # MWO-SyncDrop
 
-**Latest Version:** 1.3.1
+**Latest Version:** 1.4
 
-**Download:** [MWO-SyncDrop-1.3.1.zip](https://github.com/TheKarubian/MWO-SyncDrop/releases/download/1.3.1/MWO-SyncDrop-1.3.1.zip)
+**Download:** [MWO-SyncDrop1.4.zip](https://github.com/Oncorporation/MWO-SyncDrop/releases/download/1.4/MWO-SyncDrop1.4.zip)
 
 ## Synopsis
 This script is a plugin for the Streamlabs Chatbot for Twitch.
@@ -34,7 +34,9 @@ There, you need to specify Python's Lib folder, usually "C:\Python27\Libs" unles
 Python somewhere else.
 
 Then you can simply click on "Import Script" and select the downloaded zip-file.
-This will install the script, and you're done.
+This will install the script, , right click the script and "Insert API Key" and you're done.
+
+If you want to use the optional overlay, connect your OBS as a browser source to Index.html
 
 ## Usage
 ### Commandline Syntax

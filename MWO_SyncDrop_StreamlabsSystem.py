@@ -183,7 +183,7 @@ def runCountDown(count, includeEU, includeNA, includeOC):
 
     sendMessage("Sync drop starts in:")
 
-    f = {"link": "q_b5Rl0JvG8", "start": 965, "duration": 16000}
+    f = {"link": "q_b5Rl0JvG8", "start": 965, "duration": 17500}
     Parent.BroadcastWsEvent("EVENT_YUT", json.dumps(f, encoding='utf-8-sig'))
     for step in range(count, 0, -1):
         sendMessage("  %d" % (step))

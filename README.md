@@ -36,7 +36,12 @@ Python somewhere else.
 Then you can simply click on "Import Script" and select the downloaded zip-file.
 This will install the script, , right click the script and "Insert API Key" and you're done.
 
-If you want to use the optional overlay, connect your OBS as a browser source to Index.html
+If you want to use the optional overlay, connect your OBS as a browser source to Index.html.
+
+In your OBS/SLOBS browser source, set your Custom CSS to:
+
+      body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+      img,video {width:100%;}
 
 ## Usage
 ### Commandline Syntax

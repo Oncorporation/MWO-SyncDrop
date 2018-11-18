@@ -30,7 +30,7 @@ Version = "1.4"
 #---------------------------------------
 command = "!syncdrop"
 HELP = "help?"
-commandPermission = "caster"
+commandPermission = "Moderator"
 commandInfo = "Initiates a sync-drop countdown for MWO"
 
 launchText = "CLICK!"
@@ -82,6 +82,8 @@ def Execute(data):
                 showHelp()
             else:
                 runCountDown(effectiveTime, effectiveUseEU, effectiveUseNA, effectiveUseOC)
+                f = {"link": "q_b5Rl0JvG8", "start": 965, "duration": 20000}
+                Parent.BroadcastWsEvent("EVENT_YUT", json.dumps(f, encoding='utf-8-sig'))
     return
  
 #---------------------------------------
@@ -183,13 +185,12 @@ def runCountDown(count, includeEU, includeNA, includeOC):
 
     sendMessage("Sync drop starts in:")
 
-    f = {"link": "q_b5Rl0JvG8", "start": 965, "duration": 17500}
-    Parent.BroadcastWsEvent("EVENT_YUT", json.dumps(f, encoding='utf-8-sig'))
     for step in range(count, 0, -1):
         sendMessage("  %d" % (step))
-        time.sleep(1.0)
+        time.sleep(0.1)
 
     sendMessage(launchText)
+
     
     if(useSubMode and isFromTwitch):
        Parent.SendTwitchMessage("/subscribersoff")
